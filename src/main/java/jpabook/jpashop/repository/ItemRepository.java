@@ -15,7 +15,7 @@ public class ItemRepository {
 
     public void save(Item item) {
         if (item.getId() == null) {
-            em.persist(item);
+            em.persist(item); //GeneratedValue가 없을 수 있나
         } else {
             em.merge(item); // 업데이트
         }
