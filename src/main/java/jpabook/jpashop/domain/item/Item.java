@@ -10,7 +10,7 @@ import java.util.List;
 
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE) // 상속받은 모든 엔티티 하나의 테이블에 다 욱여넣기
-@DiscriminatorColumn(name = 'dtype')
+@DiscriminatorColumn(name = "dtype")
 @Getter @Setter
 public abstract class Item {
     @Id
