@@ -35,7 +35,7 @@ class MemberServiceTest {
     }
 
     @Test
-//    @Rollback(value = false) IllegalStateException -> 롤백 온리
+   //@Rollback(value = false) IllegalStateException -> 롤백 온리
     void findMembers() throws Exception {
         // given
         Member member1 = new Member();
