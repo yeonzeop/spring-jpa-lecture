@@ -49,4 +49,16 @@ public class Order {
         delivery.setOrder(this);
     }
 
+    // 생성 메소드
+    public Order createOrder(Member member, Delivery delivery, OrderItem... oderItems){
+        Order order = new Order();
+        order.setMember(member);
+        order.setDelivery(delivery);
+        for(OrderItem orderItem:orderItems){
+            order.addOrderItem(orderItem);
+        }
+        order.setStatus(OrderStatus.ORDER);
+        order.setOrderDate(LocalDateTime.now());
+        return order;
+    }
 }
