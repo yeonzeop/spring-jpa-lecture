@@ -27,5 +27,6 @@ public class OrderItem {
     private int count; // 상품 갯수
 
     public void cancel() {
+        getItem().addStock(count);
     }
 }
