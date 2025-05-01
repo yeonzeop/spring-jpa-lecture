@@ -26,4 +26,6 @@ public class OrderItem {
     private int orderPrice; // 주문 가격
     private int count; // 상품 갯수
 
+    public void cancel() {
+    }
 }
