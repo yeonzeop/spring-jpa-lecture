@@ -72,4 +72,13 @@ public class Order {
             orderItem.cancel();
         }
     }
+
+    //조회 로직 (주문 총 금액 조회)
+    public int getTotalPrice(){
+        int totalPrice = 0;
+        for(OrderItem orderItem:orderItems){
+            totalPrice += orderItem.getTotalPrice();
+        }
+        return totalPrice;
+    }
 }

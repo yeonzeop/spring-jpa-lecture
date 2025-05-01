@@ -26,7 +26,12 @@ public class OrderItem {
     private int orderPrice; // 주문 가격
     private int count; // 상품 갯수
 
+    // 비지니스 로직 (주문취소)
     public void cancel() {
         getItem().addStock(count);
+    }
+    // 조회 로직 (주문 상품 가격 조회)
+    public int getTotalPrice() {
+        return getOrderPrice()*getCount();
     }
 }
