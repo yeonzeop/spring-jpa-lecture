@@ -50,7 +50,7 @@ public class Order {
     }
 
     // 생성 메소드
-    public Order createOrder(Member member, Delivery delivery, OrderItem... oderItems){
+    public static Order createOrder(Member member, Delivery delivery, OrderItem... orderItems){
         Order order = new Order();
         order.setMember(member);
         order.setDelivery(delivery);
