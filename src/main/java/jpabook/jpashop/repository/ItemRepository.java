@@ -17,7 +17,7 @@ public class ItemRepository {
         if (item.getId() == null) {
             em.persist(item); //GeneratedValue가 없을 수 있나
         } else {
-            em.merge(item); // 업데이트
+            em.merge(item); // 업데이트 변경 된게 없는데 뭐하러?
         }
     }
 

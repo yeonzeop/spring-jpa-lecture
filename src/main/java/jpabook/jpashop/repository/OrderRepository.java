@@ -50,7 +50,7 @@ public class OrderRepository {
         TypedQuery<Order> query = em.createQuery(cq).setMaxResults(1000);
 
         return query.getResultList();
-//        //JPAQL
+//        //JPQL
 //        String jpql = "select o From Order o join o.member m";
 //        boolean isFirstCondition = true;
 //
